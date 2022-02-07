@@ -24,3 +24,19 @@ function startsCraps(){
     document.getElementById("lossRes").innerHTML = losses; //losses seem to be less frequent than ties
     document.getElementById("tieRes").innerHTML = ties;
 }
+//creating an extra function without having to use two separate js
+function testCodeV1(){
+    console.log("testCodeV1() stasrted"); //this will show that it is working in the console
+    var currTime = 50;
+    for(var i = 0; i < 11; i++){ //creates a countdown with less copy and pasting but also uses less numbers
+        setTimeout(function(){
+            console.log(currTime);
+            document.getElementById("countDownRes").innerHTML = currTime;
+            if(currTime == 0){ //if there is no extra '=' the code will not process well
+                document.getElementById("countDownRes").innerHTML = "Blastoff!";
+            }
+            currTime = currTime - 5; //changed it to subtract 5 instead of 2
+        }, i * 2000);
+       
+    }
+}
