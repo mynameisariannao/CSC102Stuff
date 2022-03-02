@@ -4,4 +4,17 @@ body{
 
 #countDownRes{
     color: red;
+    font-size:large;
+}
+
+#blink{
+    font-size: 20px;
+    font-weight: bold;
+    color: Brown;
+    transition: 0.5s;
+}
+#Welcome{
+    font-size: 20px;
+    color:rebeccapurple;
+    transition: 0.5s;
 }
