@@ -40,3 +40,20 @@ function testCodeV1(){
        
     }
 }
+
+// a second function allows a loop and the game of craps being playable
+function btrCountDownV1(){
+    console.log("btrCountDownV1() started");
+    var currTime = 50; //creates the repeating loop for timers
+    for(var i = 0; i < 11; i++){ // creates a loop to be played
+       setTimeout(function(){
+        console.log(currTime);
+        document.getElementById("countDownRes").innerHTML = currTime; //presents Blastoff! within the page
+        if(currTime == 0){
+            //Makes 0 into blastoff
+            document.getElementById("countDownRes").innerHTML = "Blastoff!";
+        }
+       currTime = currTime - 5;
+       }, i * 5000);
+    }
+}
