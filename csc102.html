@@ -25,42 +25,33 @@
     <h2 id= "Welcome"> Welcome Space Invaders!</h2>
     <p>
         This page will provide information on the program.
-        If website does not have information needed please call the number
-        listed on the Website.
     </p>
     <br>
-    <script>
-        /*Got rid of the alert due to the teacher saying it can be removed*/
-        var name = "Arianna Oros";
-        document.write("My name is " + name + ".");
-        console.log("c1week1.html is working correctly");
-    </script>
     <!--
         Both blast off and craps works go ahead and try it out I made sure they both didn't interfere with each other
-    -->
+    -->   
+    <button onclick="btrCountDownV1()"> Start </button> <button> Stop </button>
     <br>
     <br>
     <div id="countDownRes"> Getting ready to blast off!</div>
     <br>
     <br>
-    <button onclick="btrCountDownV1()"> Start </button> <button> Stop </button>
-    <br>
-    <br>
-    <br>
     <h2 id="blink"> Let's Play Craps </h2>
+    <br>
+    <button onclick="startsCraps();">Play</button>
+    <br>
     <div id="crapsRes"> Craps Results</div>
     <div id="die1Res"> die1 Results</div>
     <div id="die2Res"> die2 Results</div>
     <div id="sumRes">sum Results</div>
     <br>
-    <button onclick="startsCraps();">Play</button>
+    <br>
     <script type="text/javascript"> 
         var blink = document.getElementById('blink');
         setInterval(function(){
             blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
         }, 500);
     </script>
-    <br>
     Wins: <div id="winRes">0</div>
     Losses: <div id="lossRes">0</div>
     Ties: <div id="tieRes">0</div>    <!--- a little curious on what else I can add to make all functions working-->
