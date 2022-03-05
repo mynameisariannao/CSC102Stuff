@@ -22,6 +22,6 @@ function checkCreds(){
     }else {
         document.getElementById("loginStatus").innerHTML = "Access granted, Welcome " + fullName;
         alert("Access granted, Welcome " + fullName);
-        location.replace("./csc102.html");
+        location.replace("./UATSpacePage.html");
     }
 }
