@@ -27,3 +27,9 @@ body{
     border-radius: 12px;
     border-color:lightskyblue;
 }
+
+#tableHead{
+    font-family: fantasy;
+    font-size: 1.5em;
+    font-style:italic;
+}
