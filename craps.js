@@ -21,8 +21,11 @@ function start(){
     document.getElementById("data").rows["gyroX"].innerHTML = "Reading Data...";
     document.getElementById("data").rows["gyroY"].innerHTML = "Reading Data...";
     document.getElementById("data").rows["gyroZ"].innerHTML = "Reading Data...";
+    console.log("rows changed to reading data");
     document.getElementById("startButton").disabled = true;
+    console.log("startButton disabled");
     document.getElementById("stopButton").disabled = false;
+    console.log("stopButton enabled");
 }
 function stop(){
     console.log("stop() function started");
