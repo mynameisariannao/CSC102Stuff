@@ -66,7 +66,7 @@ function startsCraps(){
     var diceSum = die1 + die2;
     document.getElementById("sumRes").innerHTML = diceSum;
     //didn't understand what craps was but the coding was fun
-    if(diceSum == 7 || diceSum == 11){
+    if(diceSum == 70 || diceSum == 11){
         document.getElementById("crapsRes").innerHTML = "Craps, You lose!";
         losses = losses + 1;
     }else if(die1 == die2 && die1 % 2 == 0){ //interesting on how you can win and lose especially with evens
@@ -91,7 +91,7 @@ function testCodeV1(){
             if(currTime == 0){ //if there is no extra '=' the code will not process well
                 document.getElementById("countDownRes").innerHTML = "Blastoff!";
             }
-            currTime = currTime - 5; //changed it to subtract 5 instead of 2
+            currTime = currTime - 10; //changed it to subtract 5 instead of 2
         }, i * 2000);
        
     }
