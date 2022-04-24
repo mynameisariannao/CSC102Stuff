@@ -11,6 +11,8 @@
         UAT Space Invaders
     </title>
     <script src="craps.js"></script>
+    <script src="classCode.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -127,6 +129,7 @@
     <button id="startButton" onclick="start();" class="button"> Start </button>
     <button id="stopButton" onclick="stop();" class="button"> Stop </button>
     <br>
+
     <!--
         Both blast off and craps works go ahead and try it out I made sure they both didn't interfere with each other
     -->   
@@ -156,7 +159,26 @@
     Wins: <div id="winRes">0</div>
     Losses: <div id="lossRes">0</div>
     Ties: <div id="tieRes">0</div>    <!--- a little curious on what else I can add to make all functions working-->
-    <img src="lol.gif"> <!--- took a gif and put it here because images are fun-->
+    <br>
+    <br>
+    <button class="lgbButton" onclick="playStation();"> Play Space Station Sounds </button>
+    <br>
+    <button class="lgbButton" onclick="playOddity();"> Play David Bowie </button>
+    <br>
+    <br>
+    <script>
+        var springLaunch = new Mission("To boldly go...", 17, 17, "March", 2022, "Fiona", 3);
+        var fallLaunch = new Mission("To go twice", 25, 13, "November", 2023, "Polaris", 2);
+    </script>
+    <br>
+    <br>
+    <button class="button" onclick="launchFall()"> Launch Fall </button>
+    <button class="button" onclick="displayFall()"> displayFall </button>
+    <br>
+    <br>
+    <button class="button" onclick="launchSpring()"> Launch Spring </button>
+    <button class="button" onclick="displaySpring()"> displaySpring </button>
+
 </body>
 
 </html>
