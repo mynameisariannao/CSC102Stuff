@@ -22,7 +22,7 @@ body{
 }
 
 .button{
-    width: 100px;
+    width: 120px;
     height: 30px;
     border-radius: 12px;
     border-color:lightskyblue;
@@ -32,4 +32,11 @@ body{
     font-family: fantasy;
     font-size: 1.5em;
     font-style:italic;
+}
+
+.lgbButton {
+    width: 150;
+    height: 30px;
+    border-radius: 12px;
+    border-color:lightskyblue;
 }
