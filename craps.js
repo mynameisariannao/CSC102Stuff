@@ -118,3 +118,31 @@ function btrCountDownV1(){
        }, i * 5000);
     }
 }
+
+function sound(srcFile){
+    this.sound = document.createElement("audio");
+    this.sound.src = srcFile;
+    this.sound.setAttribute("preload", "audio");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function() {
+        this.sound.play();
+    }
+    this.stop = function() { 
+        this.sound.pause();
+    }
+}
+
+
+function playStation(){
+    console.log("playStation() started");
+    mySound = new sound("us-lab-background.mp3");
+    mySound.play();
+}
+
+function playOddity(){
+    console.log("playOddity() started");
+    mySound = new sound("David_Bowie_Space_Oddity.mp3");
+    mySound.play();
+}
